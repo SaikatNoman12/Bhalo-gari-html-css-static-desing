@@ -1,0 +1,112 @@
+@import './base.css';
+
+
+/* section seven design start:- */
+.section7 {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.section7-main {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .125);
+
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropdown-btn .btn-drop-down {
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+    margin-bottom: -1px;
+    background-color: rgba(0, 0, 0, .03) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 56px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .5px;
+
+}
+
+.dropdown-btn .btn-drop-down .dropdown-title{
+    padding-right: 10px;
+}
+
+.dropdown-btn .btn-drop-down .drop-down-angel {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid rgba(113, 113, 113, 1);
+    padding: 12px;
+}
+
+.dropdown-btn .btn-drop-down .drop-down-angel i {
+    font-size: 14px;
+    line-height: 24px;
+    top: 54%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: rgba(113, 113, 113, 1);
+}
+
+.dropdown-info {
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-info p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: #000000DE;
+}
+
+@media (max-width:667px) {
+
+    .dropdown-btn .btn-drop-down {
+        font-size: 16px;
+        padding: 16px 10px;
+    }
+
+    .dropdown-btn .btn-drop-down .drop-down-angel {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        position: relative;
+        border: 2px solid rgba(113, 113, 113, 1);
+        padding: 10px;
+    }
+
+    .dropdown-btn .btn-drop-down .drop-down-angel i {
+        font-size: 12px;
+        line-height: 20px;
+        top: 55%;
+    }
+
+    .dropdown-info p {
+        font-size: 14px;
+    }
+
+    .dropdown-info {
+        padding: 16px 10px;
+    }
+}
+
+/* section seven design end */
+

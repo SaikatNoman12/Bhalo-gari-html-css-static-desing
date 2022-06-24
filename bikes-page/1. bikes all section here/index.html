@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Bikes</title>
+</head>
+
+<body>
+    <!---banner area start-->
+    <div class="banner-area">
+        <div class="banner-slide-area">
+            <!--slide-img-->
+            <div class="slide-img">
+                <a href="#">
+                    <img src="./image/Slider_Bike_Section_Banner_13092021.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!---banner-bottom-->
+        <div class="banner-bottom">
+            <div class="container">
+                <div class="banner-bottom-main">
+                    <!---banner-bottom-top-tab-->
+                    <div class="banner-bottom-top-tab">
+                        <ul>
+                            <li class="user-tab select-tab"><button>Used</button></li>
+                            <li class="re-tab"><button>Used Bikes</button></li>
+
+                        </ul>
+                    </div>
+                    <!---banner-bottom-brand-tab-->
+                    <div class="banner-bottom-brand-tab">
+                        <ul>
+                            <li class="brand-tab">
+                                <a href="#">
+                                    <div class="brand-tab-info">
+                                        <div>
+                                            <span>Select</span>
+                                        </div>
+                                        <div>
+                                            <h3>Brand <i class="fa fa-angle-right"></i></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="brand-tab">
+                                <a href="#">
+                                    <div class="brand-tab-info">
+                                        <div>
+                                            <span>Select</span>
+                                        </div>
+                                        <div>
+                                            <h3>Modal <i class="fa fa-angle-right"></i></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="brand-tab">
+                                <a href="#">
+                                    <div class="brand-tab-info">
+                                        <div>
+                                            <span>Select</span>
+                                        </div>
+                                        <div>
+                                            <h3>Price <i class="fa fa-angle-right"></i></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="brand-tab brand-btn">
+                                <a href="#">
+                                    <div class="brand-tab-info">
+                                        <button>Find Cars <i class="fa fa-search"></i></button>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner area end -->
+
+    <!-- section one popular brand start  -->
+    <div class="section1">
+        <div class="container">
+            <div class="title">
+                <h3>Popular <span>Brands</span></h3>
+            </div>
+            <!---popular-tab-->
+            <div class="popular-tab">
+                <ul>
+                    <li><button class="popular-tab-active">Yamaha</button></li>
+                    <li><button>Honda</button></li>
+                    <li><button>Suzuki</button></li>
+                    <li><button>Bajaj</button></li>
+                </ul>
+            </div>
+            <!---popular-main-->
+            <div class="popular-main">
+                <!----card-start-->
+                <div class="card">
+                    <!--card-img-->
+                    <div class="card-img">
+                        <img src="./image/card1-1.jpg" alt="">
+                        <div class="tag">
+                            <span>Sedan</span>
+                        </div>
+                    </div>
+                    <!--card-body-->
+                    <div class="card-body">
+                        <h3>KTM 2460</h3>
+                        <h4> <img src="./image/taka.fb378b29.svg" alt="">27.40 Lacs</h4>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <!---end-->
+
+                <!----card-start-->
+                <div class="card">
+                    <!--card-img-->
+                    <div class="card-img">
+                        <img src="./image/card1-2.jpg" alt="">
+                        <div class="tag">
+                            <span>Sedan</span>
+                        </div>
+                    </div>
+                    <!--card-body-->
+                    <div class="card-body">
+                        <h3>Royal Enfield (black)</h3>
+                        <h4> <img src="./image/taka.fb378b29.svg" alt="">5.60 Lacs</h4>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <!---end-->
+
+                <!----card-start-->
+                <div class="card">
+                    <!--card-img-->
+                    <div class="card-img">
+                        <img src="./image/card1-3.jpg" alt="">
+                        <div class="tag">
+                            <span>Sedan</span>
+                        </div>
+                    </div>
+                    <!--card-body-->
+                    <div class="card-body">
+                        <h3>Hearly Devidson </h3>
+                        <h4> <img src="./image/taka.fb378b29.svg" alt="">6.00 Lacs</h4>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <!---end-->
+
+                <!----card-start-->
+                <div class="card">
+                    <!--card-img-->
+                    <div class="card-img">
+                        <img src="./image/card1-4.webp" alt="">
+                        <div class="tag">
+                            <span>Sedan</span>
+                        </div>
+                    </div>
+                    <!--card-body-->
+                    <div class="card-body">
+                        <h3>Svitch CSR 762</h3>
+                        <h4> <img src="./image/taka.fb378b29.svg" alt="">10.10 Lacs</h4>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+                <!---end-->
+
+
+            </div>
+        </div>
+    </div>
+    <!-- section one popular brand end -->
+
+
+    <!-- section two why sell on Balogari start -->
+    <div class="section2">
+        <div class="container">
+            <!---title-->
+            <div class="title">
+                <div>
+                    <h3>Why Sell on <span>Bhalogari?</span></h3>
+                </div>
+            </div>
+            <!---section3-main-->
+            <div class="section2-main">
+
+                <!--category-->
+                <div class="category-info">
+                    <div class="category-info-child">
+                        <!---category-img-->
+                        <div class="category-img">
+                            <img src="./image/bagofmoney.7b0ceef1.svg" alt="">
+                        </div>
+                        <!---category-name-->
+                        <div class="category-name">
+                            <h3>Best Price</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--category-end-->
+
+                <!--category-->
+                <div class="category-info">
+                    <div class="category-info-child">
+                        <!---category-img-->
+                        <div class="category-img">
+                            <img src="./image/percent.b47dc336.svg" alt="">
+                        </div>
+                        <!---category-name-->
+                        <div class="category-name">
+                            <h3>Instant Payment</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--category-end-->
+
+                <!--category-->
+                <div class="category-info">
+                    <div class="category-info-child">
+                        <!---category-img-->
+                        <div class="category-img">
+                            <img src="./image/money.9f19394e.svg" alt="">
+                        </div>
+                        <!---category-name-->
+                        <div class="category-name">
+                            <h3>Guaranteed Sale</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--category-end-->
+
+                <!--category-->
+                <div class="category-info">
+                    <div class="category-info-child">
+                        <!---category-img-->
+                        <div class="category-img">
+                            <img src="./image/list.a7a3fc5e.svg" alt="">
+                        </div>
+                        <!---category-name-->
+                        <div class="category-name">
+                            <h3>No Legal Hassle</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--category-end-->
+
+                <!--category-->
+                <div class="category-info">
+                    <div class="category-info-child">
+                        <!---category-img-->
+                        <div class="category-img">
+                            <img src="./image/shield.5fd05772.svg" alt="">
+                        </div>
+                        <!---category-name-->
+                        <div class="category-name">
+                            <h3>Safety Assured</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--category-end-->
+
+            </div>
+            <!--section3-main-end-->
+
+        </div>
+    </div>
+    <!-- section two why sell on Balogari end -->
+
+
+    <!-- section three search by type start -->
+    <div class="section3">
+        <div class="container">
+            <!---title-->
+            <div class="title">
+                <h3>Search by <span>Type</span></h3>
+            </div>
+            <!--section4-main-->
+            <div class="section3-main">
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike1.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Standard</h3>
+                        </div>
+                    </a>
+                </div>
+                <!----body-end-->
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike2.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Scooter</h3>
+                        </div>
+                    </a>
+                </div>
+                <!---body-end-->
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike3.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Sport</h3>
+                        </div>
+                    </a>
+                </div>
+                <!---body-end-->
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike4.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Cruiser</h3>
+                        </div>
+                    </a>
+                </div>
+                <!---body-end-->
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike5.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Cross</h3>
+                        </div>
+                    </a>
+                </div>
+                <!---body-end-->
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike6.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Electric</h3>
+                        </div>
+                    </a>
+                </div>
+                <!---body-end-->
+
+                <!---body-info-->
+                <div class="body-info">
+                    <a href="#">
+                        <div class="body-info-img">
+                            <img src="./image/bike7.svg" alt="">
+                        </div>
+                        <!---body-name-->
+                        <div class="body-name">
+                            <h3>Classic</h3>
+                        </div>
+                    </a>
+                </div>
+                <!---body-end-->
+
+            </div>
+        </div>
+    </div>
+    <!-- section three search by type end -->
+
+
+    <!-- section four search by brand start -->
+    <div class="section4">
+        <div class="container">
+            <!---title-->
+            <div class="title">
+                <div>
+                    <h3>Search by <span>brand</span></h3>
+                </div>
+
+            </div>
+            <!---section3-main-->
+            <div class="section4-main">
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/yamaha.fcbb336e.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/honda.b6799f84.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/yamaha.fcbb336e.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/Bajaj-Logo.f71c1907.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/hero.e2f07933.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/TVS.6149f55a.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/ktm.412cca6b.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/keeway-logo.9c1d612a.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+                <!--category2-start-->
+                <div class="category-info2">
+                    <a href="#">
+                        <!---category-img-->
+                        <div class="category-img2">
+                            <img src="./image/lifan.cf6fb553.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!--category2-end-->
+
+
+            </div>
+            <!--section3-main-end-->
+
+        </div>
+    </div>
+    <!-- section four search by brand end -->
+
+
+    <!-- section five what's new design start -->
+    <div class="section5">
+        <div class="container">
+            <!---title-->
+            <div class="title">
+                <h3>What's <span>New</span></h3>
+            </div>
+            <!---title-->
+            <!---section-main-->
+            <div class="section5-main">
+                <div class="new-bike-detail">
+
+                    <!-- new bike detail start -->
+                    <div class="new-bike-detail-child">
+                        <!-- <div class="bike-detail-image"> -->
+                        <img src="./image/multipurpose.91d86459.svg" alt="">
+                        <!-- </div> -->
+                        <p>Multipurpose Family Ride</p>
+                    </div>
+                    <!-- new bike detail end -->
+
+
+                    <!-- new bike detail start -->
+                    <div class="new-bike-detail-child">
+                        <!-- <div class="bike-detail-image"> -->
+                        <img src="./image/safety.9cb41cc7.svg" alt="">
+                        <!-- </div> -->
+                        <p>Safety and Comfort</p>
+                    </div>
+                    <!-- new bike detail end -->
+
+
+                    <!-- new bike detail start -->
+                    <div class="new-bike-detail-child">
+                        <!-- <div class="bike-detail-image"> -->
+                        <img src="./image/savePlanet.4cf58169.svg" alt="">
+                        <!-- </div> -->
+                        <p>Saving the Planet</p>
+                    </div>
+                    <!-- new bike detail end -->
+
+
+                    <!-- new bike detail start -->
+                    <div class="new-bike-detail-child">
+                        <!-- <div class="bike-detail-image"> -->
+                        <img src="./image/license.292cf331.svg" alt="">
+                        <!-- </div> -->
+                        <p>No License and Registration</p>
+                    </div>
+                    <!-- new bike detail end -->
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- section five what's new design end -->
+
+
+    <!-- section six sell your bike start -->
+    <div class="section6">
+        <div class="container">
+            <div class="section-six-child">
+
+                <!---title-->
+                <div class="section-six-title">
+                    <h3>Sell Your Bike in <span>3</span> <span>Simple</span> <span>Steps</span> </h3>
+                </div>
+
+                <!---section-six-main-->
+                <div class="section6-main">
+
+                    <!--step-area-->
+                    <div class="step">
+                        <!--step-info-->
+                        <div class="step-info">
+                            <!--step-img-->
+                            <div class="step-img">
+                                <img src="./image/submitDetails.f83701ce.svg" alt="">
+                            </div>
+                            <!---step-text--->
+                            <div class="step-text">
+                                <h3>Submit your Bike Details</h3>
+                                <p>Fill up bike information form and get an instant estimated price range for your
+                                    two-wheeler.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--step-area-end-->
+
+                    <!--step-area-->
+                    <div class="step">
+
+                        <!--step-info-->
+                        <div class="step-info">
+                            <!--step-img-->
+                            <div class="step-img">
+                                <img src="./image/search.e937d692.svg" alt="">
+                            </div>
+                            <!---step-text--->
+                            <div class="step-text">
+                                <h3>Free inspection</h3>
+                                <p>Valuator will visit your location for free inspection and determine the final price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--step-area-end-->
+
+                    <!--step-area-->
+                    <div class="step">
+
+                        <!--step-info-->
+                        <div class="step-info">
+                            <!--step-img-->
+                            <div class="step-img">
+                                <img src="./image/sellBike.d92a020d.svg" alt="">
+                            </div>
+                            <!---step-text--->
+                            <div class="step-text">
+                                <h3>Sell Your Bike</h3>
+                                <p>Receive instant payment in your bank account and we take care of RC transfer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--step-area-end-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section six sell your bike end -->
+
+    <!-- section seven frequently asked question start -->
+    <div class="section7">
+        <div class="container">
+            <!---title-->
+            <div class="title">
+                <h3>Frequently Asked <span>Questions</span></h3>
+            </div>
+
+            <!-- section-seven-main  -->
+            <div class="section7-main">
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">
+                                Can I buy a bike online?
+                            </span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="dropdown-info">
+                        <p>
+                            Yes, you can buy it online and get it from our premises.
+                        </p>
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">What documentation do I need to buy a bike?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">Will Bhalo bikes provide service warranty?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">>Can I sell my bike at Bhalogari?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">What do I need to sell my bike?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">What do I need to sell my bike?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">How should I upload my details?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">Will the buyer of my bike be verified too?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- dropdown end -->
+
+                <!-- dropdown start -->
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <a href="#" class="btn-drop-down">
+                            <span class="dropdown-title">How do I get paid for my bike?</span>
+                            <span class="drop-down-angel">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- dropdown end -->
+            </div>
+        </div>
+    </div>
+    <!-- section seven frequently asked question end -->
+
+
+    <!-- section eight Featured article start -->
+    <div class="section8">
+        <div class="container">
+            <!---title-->
+            <div class="title">
+                <h3>Featured <span> Articles</span></h3>
+            </div>
+            <!---section11-main-->
+            <div class="section8-main">
+                <!--articles-->
+                <div class="articles">
+                    <!---articles-img-->
+                    <div class="articles-img">
+                        <img src="./image/Feature-2.jpg" alt="">
+                        <!--articles-tag-->
+                        <div class="articles-tag">
+                            <span>Industry Insights</span>
+                        </div>
+                    </div>
+                    <!--artilces-body-->
+                    <div class="articles-body">
+                        <h3>যে গাড়ির দাম শুনলে পিলে চমকে ওঠে!</h3>
+                        <p>হাই-এন্ড হাইপার কারের কথা আসলে, কিছু গাড়ির নাম আপনা-আপনি আমাদের মাথায় চলে আসে। বুগাটি, রোলস
+                            রয়েস, পাগানি এবং অন্যান্য নির্মাতাদের মতো কয়েকটি নির্দিষ্ট কোম্পানি শীর্ষস্থানীয় সুপার
+                            কার এবং হাইপার কার নির্মাতা হিসেবে অতি পরিচিত হয়ে উঠেছে। তারা তাদের সীমাবদ্ধতা ছাপিয়ে
+                            তাদের ধনী ক্লায়েন্টদের জন্য তৈরি করেছে বিশ্বের দ্রুততম, বিরল, সুন্দর এবং সবচেয়ে দামী কিছু
+                            গাড়ি।...</p>
+                        <div style="text-align: right;">
+                            <a href="#">আরও পড়ুন <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--articles-end-->
+
+                <!--articles-->
+                <div class="articles">
+                    <!---articles-img-->
+                    <div class="articles-img">
+                        <img src="./image/Feature-techs-1.jpg" alt="">
+                        <!--articles-tag-->
+                        <div class="articles-tag">
+                            <span>Industry Insights</span>
+                        </div>
+                    </div>
+                    <!--artilces-body-->
+                    <div class="articles-body">
+                        <h3>অভিনব গাড়ি প্রযুক্তির সাতকাহন</h3>
+                        <p>সময়ের সাথে সাথে অটোমোটিভ ইন্ডাস্ট্রি এগিয়েছে অনেক দূর। এখনও নতুন নতুন প্রযুক্তি এই তালিকায়
+                            যুক্ত হচ্ছে। আজকের যুগের আধুনিক গাড়ির ক্ষেত্রে, প্রযুক্তিগত বৈশিষ্ট্যগুলো নতুন গাড়িগুলোকে
+                            আরও উন্নত করে তুলছে। এভাবেই, অভিনব গাড়ি প্রযুক্তি এবং গ্যাজেট আজকের অটোমোটিভ ইন্ডাস্ট্রি
+                            তৈরিতে একটি গুরুত্বপূর্ণ ভূমিকা পালন করে যাচ্ছে। প্রযুক্তি আজকের যানবাহনের একটি অবিচ্ছেদ্য
+                            অংশ হয়ে উঠেছে। এই...</p>
+                        <div style="text-align: right;">
+                            <a href="#">আরও পড়ুন <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--articles-end-->
+
+                <!--articles-->
+                <div class="articles">
+                    <!---articles-img-->
+                    <div class="articles-img">
+                        <img src="./image/Feature-1.jpg" alt="">
+                        <!--articles-tag-->
+                        <div class="articles-tag">
+                            <span>Auto Culture</span>
+                        </div>
+                    </div>
+                    <!--artilces-body-->
+                    <div class="articles-body">
+                        <h3>Bhalogari.com এর অগ্রযাত্রার গল্প</h3>
+                        <p>দেশের প্রথম অটোমোটিভ মার্কেটপ্লেস হিসেবে আপনার প্রয়োজনীয় সমস্ত সমাধান নিয়ে এসেছে
+                            ভালোগাড়ি। আপনার গাড়ি সংক্রান্ত যেকোনো প্রশ্নের উত্তর দিতে bhalogari.com সবসময় প্রস্তুত।
+                            আপনি যদি একজন গাড়ি প্রেমী হন, তাহলে ভালোগাড়ি হলো আপনার ওয়ান-স্টপ অনলাইন সমাধান। ভালো
+                            ভেঞ্চারস লিমিটেড দ্বারা ২০২১ সালে প্রতিষ্ঠিত হওয়া bhalogari.com দেশের শীর্ষস্থানীয়
+                            ব্র্যান্ড এবং সবচেয়ে নির্ভরযোগ্য অনলাইন অটোমোটিভ মার্কেটপ্লেস। পছন্দের গাড়ি...</p>
+                        <div style="text-align: right;">
+                            <a href="#">আরও পড়ুন <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--articles-end-->
+            </div>
+        </div>
+    </div>
+    <!-- section eight Featured article end -->
+
+    <br><br><br>
+
+</body>
+
+</html>

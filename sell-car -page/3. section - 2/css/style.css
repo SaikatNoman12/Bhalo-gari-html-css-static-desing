@@ -1,0 +1,244 @@
+@import './base.css';
+
+/* This is global style please added base.css */
+.title-2 h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+}
+/* global style please added base end */
+
+
+/* section two design start:- */
+.section2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0px 0px 12px 0px;
+}
+
+.section2-main {
+    padding: 10px 5px 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: #eee;
+}
+
+.select-title h2 {
+    color: #000000;
+    width: 100%;
+    margin: 0px auto;
+    padding: 16px 0 16px 24px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Open Sans;
+    text-transform: uppercase;
+
+}
+
+.upload-photo {
+    width: 100%;
+}
+
+.upload-photo-child {
+    width: 95%;
+    border: dashed;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px auto;
+    min-height: 508px;
+    height: 100%;
+    border-color: rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.upload-file {
+    display: none;
+}
+
+.upload-photo-icon {
+    text-align: center;
+}
+
+.upload-photo-icon p {
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.photo-place-icon {
+    color: rgba(0, 0, 0, 0.87);
+    width: 59px;
+    height: 51px;
+}
+
+.all-image-place {
+    padding: 0px 20px;
+    width: 100%;
+    cursor: default;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.image-place-child {
+    position: relative;
+    padding: 5px !important;
+    height: 115px;
+    z-index: 1;
+}
+
+.image-place-child img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.delete-button {
+    top: -8px;
+    position: absolute;
+    text-align: center;
+    color: #f06425;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    background-color: #e0e0e0;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    border-radius: 50%;
+    line-height: 30px !important;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.image-place-child .delete-button:hover {
+    background-color: #cbcbcb;
+}
+
+.image-place-child:hover .delete-button {
+    visibility: visible;
+    opacity: 1;
+    color: #f06425;
+}
+
+.select-model-title h2 {
+    padding-left: 0px !important;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.selectArea .block {
+    display: block;
+}
+
+.select-item {
+    font-size: 14px;
+    padding: 6px 24px 7px 10px;
+    background-color: #fff;
+    width: 95%;
+    border: none;
+    outline: none;
+
+}
+
+.select-item option {
+    font-size: 18px !important;
+    padding: 6px 16px !important;
+    color: #000000;
+    font-weight: 400;
+}
+
+.select-item option:first-child {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.user-label {
+    color: #000000;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+.user-input {
+    padding: 6px 24px 7px 10px;
+    outline: none;
+    border: 1px solid #f06424;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    width: 95%;
+    color: #000000;
+}
+
+.user-input::placeholder {
+    color: #000000;
+}
+
+
+@media (max-width:992px) {
+    .section2-main {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 16px;
+    }
+
+
+    .upload-photo-child {
+        width: 100%;
+        min-height: 410px;
+    }
+
+    .selectArea {
+        display: grid;
+        grid-gap: 0px 14px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .select-title h2 {
+        padding-left: 0px !important;
+    }
+
+    .select-item {
+        width: 100%;
+    }
+
+    .user-input {
+        width: 100%;
+
+    }
+
+    .select-model-title h2 {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .all-image-place {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:612px) {
+    .selectArea {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* section two design end. */

@@ -1,0 +1,121 @@
+@import './base.css';
+@import './card.css';
+
+
+/* section two design start:- */
+.section2 {
+    display: block;
+    background-color: #EFEFEF;
+    padding: 40px 0px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.section2-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
+
+.section2-slide {
+    width: 100%;
+    display: none;
+}
+
+@media(max-width:1150px) {
+    .section2-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:850px) {
+    .section2-slide {
+        display: block;
+    }
+}
+
+@media(max-width:740px) {
+    .section2-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section2-slide {
+        display: block;
+    }
+}
+
+@media(max-width:640px) {
+    .section2-slide {
+        display: block;
+    }
+}
+
+@media(max-width:500px) {
+
+    .section2-main {
+        grid-gap: 20px;
+    }
+
+    .section2-slide {
+        display: block;
+    }
+}
+
+@media(max-width:400px) {
+    .section2-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section2-slide {
+        display: block;
+    }
+
+    .category-info {
+        max-width: 100% !important;
+    }
+}
+
+.category-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    height: 206px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.category-info .category-info-child {
+    height: 100%;
+    width: 100%;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.category-info img {
+    width: 90px;
+    height: 82px;
+    margin-bottom: 30px !important;
+}
+
+.category-info h3 {
+    font-family: var(--open-sans);
+    font-style: normal;
+    display: block;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin: 0px;
+}
+
+/* section two design end. */

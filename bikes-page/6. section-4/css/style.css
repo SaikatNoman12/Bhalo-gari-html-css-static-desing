@@ -1,0 +1,128 @@
+@import './base.css';
+
+/* section four design start:- */
+.section4 {
+    display: block;
+    background-color: #EFEFEF;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.section4-main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 15px 12px;
+}
+
+.section4-slide {
+    width: 100%;
+    display: none;
+}
+
+@media(max-width:1150px) {
+    .section4-main {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media(max-width:1030px) {
+    .section4-main {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media(max-width:850px) {
+    .section4-main {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .section4-slide {
+        display: block;
+    }
+}
+
+@media(max-width:740px) {
+    .section4-main {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .section4-slide {
+        display: block;
+    }
+}
+
+@media(max-width:640px) {
+    .section4-main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section4-slide {
+        display: block;
+    }
+}
+
+@media(max-width:500px) {
+    .section4-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section4-slide {
+        display: block;
+    }
+}
+
+@media(max-width:400px) {
+    .section4-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section4-slide {
+        display: block;
+    }
+
+    .category-info2 {
+        max-width: 100% !important;
+    }
+}
+
+.category-info2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    height: 130px;
+    max-width: 140px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+
+.category-info2:hover {
+    background-color: #F9DBC6;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 16%);
+}
+
+.category-info2 a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.category-info2 .category-img2 img {
+    /* width: 60px;
+    height: 50px; */
+    max-width: 80%;
+
+    margin: 0px auto 5px auto;
+}
+/* section four design end */
+

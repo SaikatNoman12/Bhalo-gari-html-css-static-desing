@@ -1,0 +1,95 @@
+@import './base.css';
+
+/* section three design start:- */
+.section3 {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.section3-main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+}
+
+@media(max-width:1100px) {
+    .section3-main {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media(max-width:900px) {
+    .section3-main {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(max-width:760px) {
+    .section3-main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .section3-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:400px) {
+    .section3-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.body-info a {
+    border-radius: 4px;
+    background-color: #efefef;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+
+
+.body-info a:hover {
+    background-color: #F9DBC6;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 16%);
+}
+
+
+.body-info a .body-info-img img {
+    max-width: 200px;
+    margin: 0px auto 15px auto;
+    width: 80%;
+}
+
+.body-name h3 {
+    font-family: var(--open-sans);
+    font-style: normal;
+    display: block;
+    margin: 0px 0px 10px 0px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+
+}
+
+/* section three design end. */

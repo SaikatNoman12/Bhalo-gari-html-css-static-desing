@@ -1,0 +1,133 @@
+@import './base.css';
+@import './card.css';
+
+
+/* section five design start:- */
+
+.section5 {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.section5-main {
+    display: block;
+    width: 100%;
+    background-image: url(../image/background-bike-scooter.png);
+    background-repeat: repeat;
+    background-size: 56% 100%;
+    background-position: left center;
+    position: relative;
+    height: 450px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.new-bike-detail {
+    height: 100%;
+    width: 636px;
+    background-image: linear-gradient(49deg, rgb(184, 203, 217) 0%, rgba(70, 127, 167, 0.98) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.new-bike-detail-child {
+    width: 70%;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bike-detail-image {
+    height: 64px;
+
+}
+
+.new-bike-detail-child img {
+    padding: 0px 20px;
+    height: 40px;
+    max-width: 95px;
+    width: 100%;
+}
+
+.new-bike-detail-child p {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+
+    width: 80%;
+    padding: 0px 20px;
+
+}
+
+.new-bike-detail-child p::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    height: 40px;
+    width: 1px;
+    background: rgb(119, 119, 119);
+}
+
+@media (max-width:1200px) {
+    .new-bike-detail {
+        height: 100%;
+        width: 536px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .section5-main {
+        background-position: center right;
+    }
+
+    .new-bike-detail {
+        height: 100%;
+        width: 514px;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .section5-main {
+        border-radius: 5px;
+    }
+
+    .new-bike-detail {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:556px) {
+
+    .new-bike-detail-child {
+        width: 94%;
+        min-height: 64px;
+
+    }
+
+    .new-bike-detail-child img {
+        max-width: 85px;
+        width: 100%;
+    }
+
+    .new-bike-detail-child p {
+        font-size: 14px;
+    }
+}
+
+/* section five design end */

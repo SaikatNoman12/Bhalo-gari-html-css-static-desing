@@ -1,0 +1,102 @@
+@import './base.css';
+
+/* This is a global style please added base.css, Thank you  */
+.title-2 h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+}
+/* global style please added base end */
+
+
+
+/* section one popular brand design start:- */
+.section1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 30px 0px 12px 0px;
+}
+
+.section1-main {
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+
+}
+
+.title-2 p {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    padding: 16px 0 16px 0px;
+}
+
+.staric {
+    color: red;
+}
+
+.section1-main-child {
+    width: 100%;
+}
+
+.section1-main-child h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-weight: 600;
+}
+
+.chose-bike-cars {
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    display: flex;
+    font-size: 16px;
+    max-width: 457px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 16%);
+    font-weight: 600;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+
+.chose-bike-cars .btn-car-bike {
+    text-align: center;
+    border: 2px solid #f06425;
+    margin: 10px;
+    display: flex;
+    padding: 6px 30px;
+    min-height: 40px;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.chose-bike-cars .btn-car-bike:nth-child(1) {
+    color: #ffffff;
+    border: 0px solid transparent !important;
+    background: linear-gradient(to right, #fc8a19 0%, #f06425 100%);
+}
+
+@media (max-width:460px) {
+    .chose-bike-cars .btn-car-bike {
+        line-height: 24px;
+    }
+
+    .chose-bike-cars .btn-car-bike {
+        padding: 6px 18px;
+    }
+}
+
+@media (max-width:992px) {
+    .title-2 p {
+        padding: 16px 0 16px 0px;
+
+    }
+}
+
+/* section one popular brand design end. */
